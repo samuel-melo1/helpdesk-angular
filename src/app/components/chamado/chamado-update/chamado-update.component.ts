@@ -57,6 +57,7 @@ export class ChamadoUpdateComponent implements OnInit {
       this.toastr.error(ex.error.error);
     })
   }
+  
 
   findAllClientes(): void{
     this.clienteService.findAll().subscribe(response => {
