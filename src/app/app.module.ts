@@ -38,6 +38,7 @@ import { ClienteUpdateComponent } from './components/cliente/cliente-update/clie
 import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
+import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +54,8 @@ import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-
     ClienteDeleteComponent,
     ClienteListComponent,
     ClienteUpdateComponent,
-    ChamadoListComponent
+    ChamadoListComponent,
+    ChamadoCreateComponent
 
   ],
   imports: [
