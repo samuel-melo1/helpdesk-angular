@@ -3,7 +3,7 @@
     <form class="form mat-elevation-z8">
       <h1>Help Desk - Dicas de um DEV</h1>
         <img src="assets/img/login-image.svg" alt="Dicas de um DEV">
-        <mat-form-field class="full-width" appearance="fill">
+        <mat-form-field class="full-width" appearance="outline">
           <mat-label>Email</mat-label>
           <input 
             [formControl]="email" required
@@ -11,9 +11,10 @@
             name="email" 
             matInput
             placeholder="Ex. user@gmail.com">
+            <mat-icon matSuffix>email</mat-icon>
         </mat-form-field>
 
-        <mat-form-field class="full-width" appearance="fill">
+        <mat-form-field class="full-width" appearance="outline">
             <mat-label>Senha</mat-label>
             <input 
               [formControl]="senha" required
@@ -22,6 +23,7 @@
               type="password"  
               matInput 
               placeholder="Ex. 123" >
+              <mat-icon matSuffix>password</mat-icon>
           </mat-form-field>
 
           <button (click)="logar()" [disabled]="!validaCampos()" class="full-width mat-elevation-z4" mat-stroked-button color="primary">Login</button>
